@@ -16,7 +16,8 @@ Features
  
  *.xml in './sql' dir
  File Formate:
- `
+ 『% codeblock [title] [lang:language] [url] [link text] %』
+ 
  <xml>
  <sql>
  <sqlName>sid</sqlName>
@@ -26,7 +27,9 @@ Features
  </sql>
  ....
  </xml>
- 1
+  code snippet
+『% endcodeblock %』
+ 
  Questions : 
  
  what's wrong with both -s and -sid?
