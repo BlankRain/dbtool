@@ -13,8 +13,10 @@ Features
 ##Usage
  java -jar dbtool.jar -u "jdbc:mysql://mysqlserver/mydatabase" -un myusername -pa mypassword -sid sbs
  
+ 
  *.xml in './sql' dir
  File Formate:
+ `
  <xml>
  <sql>
  <sqlName>sid</sqlName>
@@ -24,10 +26,15 @@ Features
  </sql>
  ....
  </xml>
- 
+ 1
  Questions : 
+ 
  what's wrong with both -s and -sid?
+ 
  if -s is before -sid ,-sid will reset sqlstr with the value get from sqlutil. 
+ 
  if -s is after -sid ,the -s works.
+ 
  more detail see Main.java parseArgs method..
+ 
 
