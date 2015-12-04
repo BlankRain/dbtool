@@ -16,8 +16,7 @@ Features
  
  *.xml in './sql' dir
  File Formate:
- 『% codeblock [title] [lang:language] [url] [link text] %』
- 
+```
  <xml>
  <sql>
  <sqlName>sid</sqlName>
@@ -28,7 +27,7 @@ Features
  ....
  </xml>
   code snippet
-『% endcodeblock %』
+```
  
  Questions : 
  
