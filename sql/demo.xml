@@ -1,0 +1,10 @@
+<xml>
+	<sql>
+		<sqlName>sts</sqlName>
+		<sqlValue>show tables;</sqlValue>
+	</sql>
+	<sql>
+		<sqlName>sbs</sqlName>
+		<sqlValue>show databases;</sqlValue>
+	</sql>
+</xml>

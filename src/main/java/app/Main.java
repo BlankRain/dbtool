@@ -92,12 +92,19 @@ public class Main {
 					dou.setSqlstr(args[i + 1]);
 				} else if (args[i].toLowerCase().equals("-t")) {
 					dou.setSqlType(args[i + 1]);
+				} else if (args[i].toLowerCase().equals("-sid")) {
+					dou.setSid(args[i + 1]);
+					String sqlstr = SQLUtil.getSql(dou.getSid());
+					if(sqlstr!=null){
+						dou.setSqlstr(sqlstr);
+					}
 				} else if (args[i].toLowerCase().equals("-h")) {
 					System.out.println("-d to set driver");
 					System.out.println("-u to set url");
 					System.out.println("-un to set username");
 					System.out.println("-pa to set password");
 					System.out.println("-s to set sqlstr");
+					System.out.println("-sid to set sqlid; sqlid in dir ./sql *.xml files ; it will rewrite sqlstr");
 					System.out.println("-t to set sqltype {q:query ,u:update/delete/insert,x:exec}");
 					System.out.println("-h for help");
 					return null;
@@ -111,6 +118,7 @@ public class Main {
 	}
 
 }
+
 /**
  * 
  * database config
@@ -121,6 +129,15 @@ class Doubee {
 	String password = "notsetpassword";
 	String sqlstr = "notsetsql";
 	String sqlType = "q";
+	String sid = "";
+
+	public String getSid() {
+		return sid;
+	}
+
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
 
 	public Doubee() {
 	}
