@@ -26,7 +26,6 @@ Features
  </sql>
  ....
  </xml>
-  code snippet
 ```
  
  Questions : 
