@@ -25,4 +25,9 @@ Features
  ....
  </xml>
  
- if you use -sid paramter ,the -s will rewrited
+ Questions : 
+ what's wrong with both -s and -sid?
+ if -s is before -sid ,-sid will reset sqlstr with the value get from sqlutil. 
+ if -s is after -sid ,the -s works.
+ more detail see Main.java parseArgs method..
+
