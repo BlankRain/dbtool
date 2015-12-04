@@ -3,7 +3,7 @@
 ##Build 
 mvn install
 
-##Usage: 
+##Usage Version 女娲: 
   java -jar dbtool.jar -u "jdbc:mysql://mysqlserver/mydatabase" -un myusername -pa mypassword -s "show databases;"
 
 JDK 1.8 Required
